@@ -80,7 +80,6 @@ function initialize() {
   ];
 
   page = window.location.pathname;
-  console.log(page);
   var featureOpts = [];
 
   if(page == "/uploads" || page == "/"){
@@ -154,11 +153,11 @@ function drawCircle(type,lat,lng) {
   function animate() {
     var circle = new google.maps.Circle({
       map: map,
-      radius: rad,
-      center: new google.maps.LatLng(lat,lng),
-      strokeOpacity: 0.0,
-      fillColor: type,
-      fillOpacity: fillOp,
+        radius: rad,
+        center: new google.maps.LatLng(lat,lng),
+        strokeOpacity: 0.0,
+        fillColor: type,
+        fillOpacity: fillOp,
     });
     setTimeout(function(){
       circle.setMap(null);
@@ -166,9 +165,7 @@ function drawCircle(type,lat,lng) {
   }
 }
 
-
 google.maps.event.addDomListener(window, 'load', initialize);
-
 
 //=========================================================
 // Dropdown and buttons
