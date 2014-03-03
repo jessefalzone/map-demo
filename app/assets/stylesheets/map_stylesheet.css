@@ -205,7 +205,7 @@ table.mapTable{
   -webkit-transition:width .3s, height .3s, -webkit-transform .3s;
   position:absolute;
   left:728px;
-  top:520px;
+  top:510px;
 }
 .arrow-left:hover, .arrow-left.hovered {
   transform: rotate(-90deg);

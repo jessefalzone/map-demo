@@ -79,14 +79,15 @@ function initialize() {
     }
   ];
 
-  page = window.location.pathname.split("/")[2];
+  page = window.location.pathname;
+  console.log(page);
   var featureOpts = [];
 
-  if(page == "uploads"){
+  if(page == "/uploads" || page == "/"){
     featureOpts = featureArray.concat(uploadsMap);
-  }else if(page == "downloads"){
+  }else if(page == "/downloads") {
     featureOpts = featureArray.concat(downloadsMap);
-  }else if(page == "accounts"){
+  }else if(page == "/accounts"){
     featureOpts = featureArray.concat(accountsMap);
   };
 
